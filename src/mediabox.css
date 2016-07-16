@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    z-index: 99999;
+    z-index: 1001;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
@@ -48,6 +48,7 @@
     max-width: 100% !important;
     width: 100% !important;
     display: block !important;
+    height: 720px !important;
     border: none !important;
     position: absolute;
     top: 0;
