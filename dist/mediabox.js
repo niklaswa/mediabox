@@ -1,4 +1,3 @@
-/*! mediabox v1.1.1 | (c) 2016 Pedro Rogerio | https://github.com/pinceladasdaweb/mediabox */
 (function (root, factory) {
     "use strict";
     if (typeof define === 'function' && define.amd) {
@@ -83,9 +82,16 @@
             }
 
             lightbox = this.template(
-                '<div class="mediabox-wrap" role="dialog" aria-hidden="false"><div class="mediabox-content" role="document" tabindex="0"><span class="mediabox-close" aria-label="close"></span><iframe src="{embed}?autoplay=1" frameborder="0" allowfullscreen></iframe></div></div>', {
+                '<div class="mediabox-wrap" role="dialog" aria-hidden="false">' +
+                    '<div class="mediabox-content embed-responsive embed-responsive-16by9" role="document" tabindex="0">' +
+                        '<span class="mediabox-close" aria-label="close"></span>' +
+                        '<iframe class="embed-responsive-item" src="{embed}?autoplay=1" frameborder="0" allowfullscreen></iframe>' +
+                    '</div>' +
+                '</div>', 
+                {
                     embed: embedLink
-                });
+                }
+            );
 
             this.root.insertAdjacentHTML('beforeend', lightbox);
         },
