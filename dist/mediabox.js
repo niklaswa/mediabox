@@ -85,7 +85,7 @@
                 '<div class="mediabox-wrap" role="dialog" aria-hidden="false">' +
                     '<div class="mediabox-content embed-responsive embed-responsive-16by9" role="document" tabindex="0">' +
                         '<span class="mediabox-close" aria-label="close"></span>' +
-                        '<iframe class="embed-responsive-item" src="{embed}?autoplay=1" frameborder="0" allowfullscreen></iframe>' +
+                        '<iframe class="embed-responsive-item" src="{embed}?autoplay=1&showinfo=0" frameborder="0" allowfullscreen></iframe>' +
                     '</div>' +
                 '</div>', 
                 {
